@@ -1,0 +1,289 @@
+/* CSS Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #e9f7fe;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --white-color: #fff;
+    --border-color: #ddd;
+    --transition-speed: 0.3s;
+    --padding: 20px;
+    --margin: 20px;
+    --border-radius: 5px;
+    --font-size: 16px;
+    --font-weight-bold: bold;
+    --font-family: 'Roboto', sans-serif;
+    --heading-font-family: 'Montserrat', sans-serif;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+/* General styles */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transition: background-color var(--transition-speed);
+}
+
+header:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: var(--padding);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: var(--font-weight-bold);
+    transition: color var(--transition-speed);
+}
+
+.nav-links a:hover {
+    color: lighten(var(--white-color), 20%);
+}
+
+.logo img {
+    max-width: 150px;
+    transition: transform var(--transition-speed);
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.logo2 img {
+    display: block;
+    margin: var(--margin) auto;
+    max-width: 100px;
+    transition: transform var(--transition-speed);
+}
+
+.logo2 img:hover {
+    transform: scale(1.1);
+}
+
+.paragraph1 h2 {
+    text-align: center;
+    margin: var(--margin) 0;
+    color: var(--primary-color);
+    font-family: var(--heading-font-family);
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: color var(--transition-speed);
+}
+
+.paragraph1 h2:hover {
+    color: darken(var(--primary-color), 10%);
+}
+
+.bloc1, .bloc2, .bloc3, .bloc4, .bloc5, .bloc6, .bloc7, .bloc8 {
+    padding: var(--padding);
+    margin: var(--margin) 0;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.bloc1:hover, .bloc2:hover, .bloc3:hover, .bloc4:hover, .bloc5:hover, .bloc6:hover, .bloc7:hover, .bloc8:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.02);
+}
+
+.bloc1 p, .bloc2 p, .bloc3 p, .bloc4 p, .bloc5 p, .bloc6 p, .bloc7 p, .bloc8 p {
+    line-height: 1.6;
+    font-family: var(--font-family);
+    font-size: 1em;
+}
+
+.bloc2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bloc2 .box1, .bloc2 .box2, .bloc2 .box3 {
+    flex: 1;
+    margin: 10px;
+    padding: var(--padding);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    background-color: var(--secondary-color);
+    transition: transform var(--transition-speed);
+}
+
+.bloc2 .box1:hover, .bloc2 .box2:hover, .bloc2 .box3:hover {
+    transform: scale(1.05);
+}
+
+.bloc2 img {
+    max-width: 50px;
+    margin-bottom: 10px;
+    transition: transform var(--transition-speed);
+}
+
+.bloc2 img:hover {
+    transform: scale(1.1);
+}
+
+.bloc2 select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: border-color var(--transition-speed);
+}
+
+.bloc2 select:hover {
+    border-color: darken(var(--primary-color), 10%);
+}
+
+.bloc4 .area {
+    text-align: center;
+}
+
+.bloc4 .box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bloc4 .box1, .bloc4 .box2, .bloc4 .box3, .bloc4 .box4 {
+    flex: 1;
+    margin: 10px;
+    padding: var(--padding);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    background-color: var(--secondary-color);
+    transition: transform var(--transition-speed);
+}
+
+.bloc4 .box1:hover, .bloc4 .box2:hover, .bloc4 .box3:hover, .bloc4 .box4:hover {
+    transform: scale(1.05);
+}
+
+.bloc4 img {
+    max-width: 50px;
+    margin-bottom: 10px;
+    transition: transform var(--transition-speed);
+}
+
+.bloc4 img:hover {
+    transform: scale(1.1);
+}
+
+.bloc6 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bloc6 .ig {
+    flex: 1;
+    margin: 10px;
+    padding: var(--padding);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    background-color: var(--secondary-color);
+    transition: transform var(--transition-speed);
+}
+
+.bloc6 .ig:hover {
+    transform: scale(1.05);
+}
+
+.bloc6 img {
+    max-width: 100px;
+    margin-bottom: 10px;
+    transition: transform var(--transition-speed);
+}
+
+.bloc6 img:hover {
+    transform: scale(1.1);
+}
+
+.bloc7 {
+    text-align: center;
+}
+
+.bloc7 a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
+}
+
+.bloc7 a:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.bloc8 {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: var(--padding);
+}
+
+.bloc8 a {
+    color: var(--white-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+.bloc8 a:hover {
+    color: lighten(var(--white-color), 20%);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bloc2, .bloc4, .bloc6 {
+        flex-direction: column;
+    }
+
+    .bloc2 .box1, .bloc2 .box2, .bloc2 .box3,
+    .bloc4 .box1, .bloc4 .box2, .bloc4 .box3, .bloc4 .box4,
+    .bloc6 .ig {
+        flex: none;
+        width: 100%;
+    }
+}
